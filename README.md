@@ -12,7 +12,7 @@ For each feed in your OPML file
 
 OPML Feedy uses "youtube-dl" as the file fetcher, but this can be changed at the top of the file by setting the `FEED_DL_APP` to something else.
 
-You can also change which shell interpreter is used (default is *bash*).
+You can also change which shell interpreter is used (default is **bash**).
 
 And finally, you can change what the actual shell script is named in each folder.
 
@@ -53,7 +53,7 @@ done
 
 This goes into each directory and runs the `feed.sh` script to download the feed files.
 
-**Note that this just loops through one feed at a time. So it may take a while to fully backup your feeds. Feel free to change it up how you want!**
+*Note that this just loops through one feed at a time. So it may take a while to fully backup your feeds. Feel free to change it up how you want!*
 
 
 # Warning!
