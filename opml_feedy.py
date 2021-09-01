@@ -1,4 +1,5 @@
 import os
+import re
 import stat
 import sys
 
@@ -67,7 +68,7 @@ def feed_builder(filepath):
     for feed in feeds:
         if feed.title in organized:
             if feed.url_xml not in organized.get(feed.title):
-                organized.append(feed.url_xml)
+                organized.get(feed.title).append(feed.url_xml)
         else:
             organized[feed.title] = [feed.url_xml]
     # ToDo - In case we have several with the same name, append to name?

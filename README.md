@@ -46,7 +46,7 @@ From the folder that contains all of your feed folders (and OPML Feedy), you can
 for d in `ls -d -- */`; do
     cd "$d";
     echo "Getting feed for $d";
-    ls -l feed.sh;
+    sh feed.sh;
     cd ..;
 done
 ```
